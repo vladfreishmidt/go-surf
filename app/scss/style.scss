@@ -4,7 +4,8 @@
 @import "global";
 
 .header {
-
+  position: relative;
+  height: 100vh;
 }
 
 .header__slider {
@@ -50,7 +51,52 @@
   margin-bottom: 8px;
 }
 
+.slider-arrows {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  cursor: pointer;
+  z-index: 4;
+}
 
+.slider-arrows__left {
+  right: 125px;
+}
+
+.slider-dots {
+  max-width: 920px;
+  width: 100%;
+  position: absolute;
+  right: 50px;
+  bottom: 36px;
+  color: #fff;
+
+  .slick-current {
+    .dots-box {
+      border-top: 4px solid $green;
+    }
+  }
+}
+
+.dots-box {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 28px;
+  border-top: 4px solid #fff;
+  padding-top: 6px;
+
+  &__number {
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  &__name {
+    font-weight: 300;
+    line-height: 19px;
+  }
+}
 
 @import "media";
 
