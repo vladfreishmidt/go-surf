@@ -25,7 +25,6 @@
   right: 80px;
   bottom: 116px;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .slider-item__info-title {
@@ -95,6 +94,7 @@
   &__name {
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 
@@ -114,7 +114,6 @@
   font-weight: 800;
   font-size: 200px;
   line-height: 156px;
-  text-transform: uppercase;
   color: #FFFFFF;
   opacity: 0.07;
   position: absolute;
@@ -137,6 +136,7 @@
       letter-spacing: 3px;
       padding-top: 6px;
       margin-bottom: 20px;
+      text-transform: capitalize;
     }
   }  
 }
@@ -170,6 +170,7 @@
   letter-spacing: 1.05px;
   display: inline-block;
   position: relative;
+  text-transform: capitalize;
 
   &::before {
     content: '';
@@ -209,6 +210,20 @@
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.surf {
+  padding: 160px 0 210px;
+  background-image: url(../img/surf-bg.png);
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.surf__subtitle {
+  text-align: right;
+  padding-right: 80px;
+  margin-top: -86px;
 }
 
 
